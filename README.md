@@ -5,6 +5,19 @@
 
 Wichtig: Eine ausführliche Anleitung, wie Plex, Overseerr, Radarr, Sonarr und SABnzbd eingerichtet werden müssen, ist nicht enthalten. Entsprechende Anleitungen hierzu sind im Internet zu finden.
 
+## 📚 Inhaltsverzeichnis
+- [📦 Enthaltene Dienste](#-enthaltene-dienste)
+- [📝 Voraussetzungen](#-voraussetzungen)
+- [🌐 Port- und WebUI-Übersicht](#-port--und-webui-übersicht)
+- [⚖️ Rechtlicher Hinweis (Disclaimer)](#️-rechtlicher-hinweis-disclaimer)
+- [▶️ Option 1: Automatische Installation](#️-option-1-automatische-installation)
+- [🛠️ Option 2: Manuelle Installation](#️-option-2-manuelle-installation)
+- [🔐 VPN & Datenschutz](#-vpn--datenschutz)
+- [⚠️ Live-Logs und Troubleshooting](#️-live-logs-und-troubleshooting)
+- [🔁 Backup-Hinweis](#-backup-hinweis)
+- [❤️ Danksagung](#️-danksagung)
+- [📸 Screenshots](#-screenshots)
+
 ## 📦 Enthaltene Dienste:
  - **Plex**: Medienserver für Filme, Serien, Musik etc.
  - **Radarr**: Automatisierter Film-Downloader
