@@ -31,8 +31,8 @@ chown -R 1000:1000 ./media ./config
 chmod -R 755 ./media ./config
 
 echo "📥 Downloading docker-compose.yml and .env file..."
-curl -sSL https://github.com/CelduinX/homeflix/raw/refs/heads/main/docker-compose.yml -o docker-compose.yml
-curl -sSL https://github.com/CelduinX/homeflix/raw/refs/heads/main/.env -o .env
+curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
+curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
 
 echo "📝 Opening .env file for configuration..."
 nano .env
