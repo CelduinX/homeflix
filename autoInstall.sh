@@ -27,12 +27,12 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 echo "📁 Creating project directories..."
 mkdir -p /opt/homeflix/media/{tv,movies,downloads,incomplete} /opt/homeflix/config/{plex,overseerr,radarr,sonarr,sabnzbd}
 cd /opt/homeflix
-chown -R 1000:1000 ./media ./config
 chmod -R 755 ./media ./config
 
 echo "📥 Downloading docker-compose.yml and .env file..."
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
+chown -R 1000:1000 /opt/docker/homeflix
 
 echo "📦 Pulling container images..."
 docker compose pull
