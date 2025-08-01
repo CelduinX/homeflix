@@ -32,7 +32,7 @@ chmod -R 755 ./media ./config
 echo "📥 Downloading docker-compose.yml and .env file..."
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
-chown -R 1000:1000 /opt/docker/homeflix
+chown -R 1000:1000 /opt/homeflix
 
 echo "📦 Pulling container images..."
 docker compose pull
