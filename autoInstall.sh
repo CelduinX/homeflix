@@ -27,7 +27,6 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 echo "📁 Creating project directories..."
 mkdir -p /opt/homeflix/media/{tv,movies,downloads,incomplete} /opt/homeflix/config/{plex,overseerr,radarr,sonarr,sabnzbd}
 cd /opt/homeflix
-chmod -R 755 ./media ./config
 
 echo "📥 Downloading docker-compose.yml and .env file..."
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
