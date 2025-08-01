@@ -102,9 +102,7 @@ Anleitungen hierzu findest du im Internet und sind nicht teil dieses Projekts.
 
 ## 🔐 VPN & Datenschutz
 
-Der Internet und Usenet-Traffic über **Radarr, Sonarr** und **SABnzbd** läuft ausschließlich durch den Gluetun-VPN-Container.  
-Ohne aktive VPN-Verbindung stoppt der Traffic automatisch (Killswitch).  
-
+Der Internet und Usenet-Traffic über **Radarr, Sonarr** und **SABnzbd** läuft ausschließlich durch den Gluetun-VPN-Container. Ohne aktive VPN-Verbindung stoppt der Traffic automatisch (Killswitch).  
 Trage deine Zugangsdaten wie oben beschrieben in der `.env` Datei ein.
 
 ## ⚠️ Live-Logs und Troubleshooting
