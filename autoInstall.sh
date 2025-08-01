@@ -34,11 +34,13 @@ echo "📥 Downloading docker-compose.yml and .env file..."
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
 
-echo "📝 Opening .env file for configuration..."
-nano .env
+echo "📝 Please review and edit the .env file:"
+echo "👉 Run manually: nano /opt/homeflix/.env"
+read -p "Press Enter to continue after editing the file..."
 
 if grep -q 'VPN_PRIVATE_KEY=""' .env; then
-  echo "⚠️ Please make sure to fill in your VPN credentials in the .env file before starting containers."
+  echo "⚠️ Warning: The .env file still contains empty VPN credentials!"
+  echo "You may need to edit it before running the containers."
   read -p "Press Enter to continue anyway or CTRL+C to cancel..."
 fi
 
