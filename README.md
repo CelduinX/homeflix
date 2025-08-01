@@ -51,8 +51,8 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 **Führe auf deinen Ubuntu Server folgenden Befehl aus:**
 
 **Installation mit WireGuard VPN:**
- ```sudo bash <(curl -s https://raw.githubusercontent.com/CelduinX/homeflix/main/autoInstall.sh)``` 
-
+    curl -s https://raw.githubusercontent.com/CelduinX/homeflix/main/autoInstall.sh | sudo bash
+ 
 **Bitte lesen! - Wichtiger Hinweis:**
 Während der Installation wird der **Nano-Editor** für die Bearbeitung der .env-Datei geöffnet.
 Trage hier deine VPN-Zugangdaten ein und beende den Nano Editor mit `STRG + X` und anschließend `Y` + `Enter`.
