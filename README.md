@@ -40,8 +40,8 @@ Anschließend wird die Installation abgeschlossen und die Container fahren hoch.
 
 ## 🛠️ Option 2: Manuelle Installation
 #### 1. Debian oder Ubuntu Server installieren
-Ubuntu Server Download: https://ubuntu.com/download/server
-Debian Server Download: https://www.debian.org/distrib/
+- Ubuntu Server Download: https://ubuntu.com/download/server
+- Debian Server Download: https://www.debian.org/distrib/
 
 #### 2. Docker installieren
 Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
