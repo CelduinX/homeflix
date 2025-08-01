@@ -50,13 +50,21 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 ## ▶️ Option 1: Automatische Installation
 **Führe auf deinen Ubuntu Server folgenden Befehl aus:**
 
+**Installation mit WireGuard VPN:**
     sudo bash <(curl -s https://github.com/CelduinX/homeflix/raw/refs/heads/main/autoInstall.sh)
+
+**Installation mit OpenVPN:**
+*in Arbeit*
+
+**Installation ohne VPN:**
+*in Arbeit*
 
 **Bitte lesen! - Wichtiger Hinweis:**
 Während der Installation wird der **Nano-Editor** für die Bearbeitung der .env-Datei geöffnet.
-Trage hier deine WireGuard VPN-Zugangdaten ein und beende den Nano Editor mit `STRG + X` und anschließend `Y` + `Enter`
+Trage hier deine VPN-Zugangdaten ein und beende den Nano Editor mit `STRG + X` und anschließend `Y` + `Enter`.
 
 Anschließend wird die Installation abgeschlossen und die Container fahren hoch.
+Ohne funktionierende WireGuard VPN-Verbindung sind die Container Radarr, Sonarr und SABnzbd nicht erreichbar!
 
 ## 🛠️ Option 2: Manuelle Installation
 #### 1. Debian oder Ubuntu Server installieren
