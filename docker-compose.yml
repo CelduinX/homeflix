@@ -1,4 +1,11 @@
 ---
+# ============================================
+# ⚠️ Important Note:
+# This file usually does not need to be edited.
+# All configuration and customization should be done
+# in the .env file (e.g. ports, paths, user IDs).
+# ============================================
+
 services:
 
   plex:
