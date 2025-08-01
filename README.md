@@ -24,7 +24,7 @@ Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Ein
  - **Sonarr**: Automatisierter Serien-Downloader
  - **Overseerr**: Anfrage-Management für Plex-Nutzer
  - **SABnzbd**: Usenet-Downloader
- - **Gluetun**: VPN-Kill-Switch über WireGuard oder OpenVPN
+ - **Gluetun**: VPN-Kill-Switch über WireGuard
 
 ## 📝 Voraussetzungen
 - Ubuntu Server (LTS Version empfohlen)
