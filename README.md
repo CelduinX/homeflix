@@ -77,13 +77,14 @@ Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
     cd /opt/homeflix
 
 #### 4. Ordnerstruktur vorbereiten
-    mkdir -p ./media/{tv,movies,downloads,incomplete} ./config/{plex,overseerr,radarr,sonarr,sabnzbd}  
-    chown -R 1000:1000 ./media ./config  
-    chmod -R 755 ./media ./config
+    sudo mkdir -p ./media/{tv,movies,downloads,incomplete} ./config/{plex,overseerr,radarr,sonarr,sabnzbd}  
+    sudo chown -R 1000:1000 ./media ./config  
+    sudo chmod -R 755 ./media ./config
 
 #### 5. Dateien herunterladen
-    wget platzhalter/docker-compose.yml  
-    wget platzhalter/.env
+    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml
+    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/.env
+    sudo chown -R 1000:1000 /opt/homeflix
 
 #### 6. `.env` Datei bearbeiten und VPN-Zugangsdaten hinterlegen:
 
