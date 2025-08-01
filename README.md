@@ -13,6 +13,12 @@ Wichtig: Eine ausführliche Anleitung, wie Plex, Overseerr, Radarr, Sonarr und S
  - **SABnzbd**: Usenet-Downloader
  - **Gluetun**: VPN-Kill-Switch über WireGuard oder OpenVPN
 
+## 📝 Voraussetzungen
+- Ubuntu Server (LTS Version empfohlen)
+- Usenet Anbieter
+- Usenet Index Anbieter
+- WireGuard fähiger VPN-Anbieter
+
 ## 🌐 Port- und WebUI-Übersicht
 Alle Dienste sind im internen Docker-Netzwerk miteinander verbunden.  
 Ersetze `<DOCKER_SERVER_IP>` durch die lokale IP deines Docker-Hosts.
