@@ -28,8 +28,6 @@ Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Ein
 
 ## 📝 Voraussetzungen
 - Ubuntu Server (LTS Version empfohlen)
-- Usenet Anbieter
-- Usenet Index Anbieter
 - WireGuard fähiger VPN-Anbieter
 
 ## 🌐 Port- und WebUI-Übersicht
