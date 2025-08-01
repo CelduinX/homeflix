@@ -46,7 +46,7 @@ Ersetze `<DOCKER_SERVER_IP>` durch die lokale IP deines Docker-Hosts.
 Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizenz ist in vielen Ländern, darunter auch Deutschland, **illegal**. Dieses Projekt stellt lediglich eine technische Infrastruktur zur Verfügung, die rechtlich **neutral** ist. Der Betreiber des Servers ist selbst dafür verantwortlich, welche Inhalte über Usenet oder andere Quellen bezogen werden. Bitte informiere dich über die geltenden Gesetze in deinem Land und nutze diese Software ausschließlich für **legale Zwecke**, wie z. B. den Zugriff auf eigene Backups, Open-Source-Medien oder freie Inhalte.
 
 ## ▶️ Option 1: Automatische Installation
-**1. Automatische Installation mit WireGuard VPN:**
+**1. Script zur automatischen Installation runterladen und ausführen:**
 
     curl -O https://raw.githubusercontent.com/CelduinX/homeflix/main/autoInstall.sh
     chmod +x autoInstall.sh
