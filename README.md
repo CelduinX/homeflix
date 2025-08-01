@@ -98,7 +98,6 @@ Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
 - `PUID` und `PGID` 1000 ist die Standard ID für den ersten angelegten Linux User
 - `TIMEZONE` für Deutschland: `Europe/Berlin` 
 - `PLEX_CLAIM` Claim Code, Plex Server wird beim ersten Start direkt eigenen Plex Konto zugewiesen (optional)
-- `HW_TRANSCODE_DEVICE` nur mit Plex-Pass möglich (siehe HardwareTranscoding)
 - `PATH_XXXX` Speicherorte der Medien-Dateien
 - `XXXX_CONFIG` Speicherorte der Container Configs
 
