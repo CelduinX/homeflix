@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e  # Script bricht bei Fehler ab
+set -e  # Exit immediately on error
 
 echo "🔄 Updating system packages..."
 apt update && apt upgrade -y
@@ -34,20 +34,22 @@ echo "📥 Downloading docker-compose.yml and .env file..."
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
 curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
 
-echo "📝 Please review and edit the .env file:"
-echo "👉 Run manually: nano /opt/homeflix/.env"
-read -p "Press Enter to continue after editing the file..."
-
-if grep -q 'VPN_PRIVATE_KEY=""' .env; then
-  echo "⚠️ Warning: The .env file still contains empty VPN credentials!"
-  echo "You may need to edit it before running the containers."
-  read -p "Press Enter to continue anyway or CTRL+C to cancel..."
-fi
-
 echo "📦 Pulling container images..."
 docker compose pull
 
-echo "🚀 Starting containers..."
-docker compose up -d
-
-echo "✅ Homeflix setup completed!"
+echo "📝 Configuration required!"
+echo "Your .env file still needs VPN credentials to function correctly."
+echo
+echo "👉 Please run the following commands manually now:"
+echo
+echo "   cd /opt/homeflix"
+echo "   sudo nano .env"
+echo
+echo "🔐 Edit the VPN_PRIVATE_KEY and other required fields."
+echo "🚀 After editing, start Homeflix with:"
+echo
+echo "   docker compose up -d"
+echo
+echo "✅ Setup completed. You're now in the Homeflix directory."
+cd /opt/homeflix
+exec bash  # start interactive shell in /opt/homeflix
