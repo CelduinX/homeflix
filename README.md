@@ -78,10 +78,8 @@ Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
 
 #### 4. Ordnerstruktur vorbereiten
     sudo mkdir -p ./media/{tv,movies,downloads,incomplete} ./config/{plex,overseerr,radarr,sonarr,sabnzbd}  
-    sudo chown -R 1000:1000 ./media ./config  
-    sudo chmod -R 755 ./media ./config
 
-#### 5. Dateien herunterladen
+#### 5. Dateien herunterladen und Berechtigungen anpassen
     wget https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml
     wget https://raw.githubusercontent.com/CelduinX/homeflix/main/.env
     sudo chown -R 1000:1000 /opt/homeflix
