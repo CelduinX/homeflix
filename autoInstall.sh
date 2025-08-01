@@ -42,8 +42,7 @@ echo "Your .env file still needs VPN credentials to function correctly."
 echo
 echo "👉 Please run the following commands manually now:"
 echo
-echo "   cd /opt/homeflix"
-echo "   sudo nano .env"
+echo "   sudo nano /opt/homeflix/.env"
 echo
 echo "🔐 Edit the VPN_PRIVATE_KEY and other required fields."
 echo "🚀 After editing, start Homeflix with:"
