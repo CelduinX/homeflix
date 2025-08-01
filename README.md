@@ -1,40 +1,18 @@
 # 🎬 Homeflix
 
 Ein selbst gehosteter Docker-Stack für dein Heimkino mit **Plex Media Server** und automatisierter **Usenet-Integration** über Radarr, Sonarr, SABnzbd & mehr.
-
 > **Zielgruppe:** Anfänger, Selbsthoster und Heimkino-Fans, die eine automatisierte Medienverwaltung auf dem eigenen Server möchten.
 
 ----------
 
 ## 📦 Enthaltene Dienste
 
-Dienst
-
-Beschreibung
-
-**Plex**
-
-Medienserver für Filme, Serien, Musik etc.
-
-**Radarr**
-
-Automatisierter Film-Downloader
-
-**Sonarr**
-
-Automatisierter Serien-Downloader
-
-**Overseerr**
-
-Anfrage-Management für Plex-Nutzer
-
-**SABnzbd**
-
-Usenet-Downloader mit Kategorie-Support
-
-**Gluetun**
-
-VPN-Kill-Switch über WireGuard zur Anonymisierung
+**Plex**: Medienserver für Filme, Serien, Musik etc.
+**Radarr**: Automatisierter Film-Downloader
+**Sonarr**: Automatisierter Serien-Downloader
+**Overseerr**: Anfrage-Management für Plex-Nutzer
+**SABnzbd**: Usenet-Downloader mit Kategorie-Support
+**Gluetun**: VPN-Kill-Switch über WireGuard zur Anonymisierung
 
 ----------
 
@@ -43,53 +21,26 @@ VPN-Kill-Switch über WireGuard zur Anonymisierung
 Alle Dienste sind im internen Docker-Netzwerk miteinander verbunden.  
 Ersetze `<DOCKER_SERVER_IP>` durch die lokale IP deines Docker-Hosts.
 
-Dienst
-
-Port
-
-WebUI URL
-
-Hinweis
-
 Plex
-
-32400
-
-http://<DOCKER_SERVER_IP>:32400
-
-Optional im Router freigeben
+Port: 32400
+URL: http://<DOCKER_SERVER_IP>:32400
+Anmerkung: Optional im Router freigeben
 
 Overseerr
-
-5055
-
-http://<DOCKER_SERVER_IP>:5055
-
-Anmeldung beim ersten Start
+Port: 5055
+URL: http://<DOCKER_SERVER_IP>:5055
 
 Radarr
-
-7878
-
-http://<DOCKER_SERVER_IP>:7878
-
-Anmeldung beim ersten Start
+Port: 7878
+URL: http://<DOCKER_SERVER_IP>:7878
 
 Sonarr
-
-8989
-
-http://<DOCKER_SERVER_IP>:8989
-
-Anmeldung beim ersten Start
+Port: 8989
+URL: http://<DOCKER_SERVER_IP>:8989
 
 SABnzbd
-
-8080
-
-http://<DOCKER_SERVER_IP>:8080
-
-Anmeldung beim ersten Start
+Port: 8080
+URL: http://<DOCKER_SERVER_IP>:8080
 
 ----------
 
@@ -99,17 +50,16 @@ Diese Anleitung gilt für die Standard-Version **ohne Reverse Proxy**.
 Für die Proxy-Variante siehe `docker-compose-proxy.yml` und `.env-proxy`.
 
 ### 1. Debian oder Ubuntu Server installieren
-
 Empfohlen: Ubuntu Server 22.04 oder Debian 12
+Ubuntu Server Download: [https://ubuntu.com/download/server]
+Debian Server Download: [https://www.debian.org/distrib/]
 
-### 2. Docker & Docker Compose installieren
-
+### 2. Docker installieren
 Folge der offiziellen Anleitung:  
 [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
 
 ### 3. Projektverzeichnis erstellen
-
-sudo mkdir -p /opt/homeflix  
+sudo mkdir -p /opt/homeflix
 cd /opt/homeflix
 
 ### 4. Ordnerstruktur vorbereiten
