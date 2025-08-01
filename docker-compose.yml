@@ -17,8 +17,6 @@ services:
       - TZ=${TIMEZONE}
       - VERSION=docker
       - PLEX_CLAIM=${PLEX_CLAIM}
-    devices:
-      - ${HW_TRANSCODE_DEVICE}:${HW_TRANSCODE_DEVICE}
     volumes:
       - ${PLEX_CONFIG}:/config
       - ${PATH_TV}:/tv
