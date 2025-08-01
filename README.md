@@ -29,7 +29,7 @@ Ersetze `<DOCKER_SERVER_IP>` durch die lokale IP deines Docker-Hosts.
 Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizenz ist in vielen Ländern, darunter auch Deutschland, **illegal**. Dieses Projekt stellt lediglich eine technische Infrastruktur zur Verfügung, die rechtlich **neutral** ist. Der Betreiber des Servers ist selbst dafür verantwortlich, welche Inhalte über Usenet oder andere Quellen bezogen werden. Bitte informiere dich über die geltenden Gesetze in deinem Land und nutze diese Software ausschließlich für **legale Zwecke**, wie z. B. den Zugriff auf eigene Backups, Open-Source-Medien oder freie Inhalte.
 
 ## ▶️ Option 1: Automatische Installation
-**Führe auf deinen Debian oder Ubuntu Server folgenden Befehl aus:**
+**Führe auf deinen Ubuntu Server folgenden Befehl aus:**
 
     bash <(curl -s https://github.com/CelduinX/homeflix/raw/refs/heads/main/autoInstall.sh)
 
