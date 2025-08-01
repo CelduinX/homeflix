@@ -50,13 +50,13 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 ## ▶️ Option 1: Automatische Installation
 **Führe auf deinen Ubuntu Server folgenden Befehl aus:**
 
-**Installation mit WireGuard VPN:**
+- **Installation mit WireGuard VPN:**
     sudo bash <(curl -s https://github.com/CelduinX/homeflix/raw/refs/heads/main/autoInstall.sh)
 
-**Installation mit OpenVPN:**
+- **Installation mit OpenVPN:**
 *in Arbeit*
 
-**Installation ohne VPN:**
+- **Installation ohne VPN:**
 *in Arbeit*
 
 **Bitte lesen! - Wichtiger Hinweis:**
