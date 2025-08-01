@@ -54,7 +54,7 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 
  
 **2. VPN-Zugangsdaten hinterlegen:**
-- .env-Datei mit dem Nano-Editor bearbeiten: `nano .env`
+- Nach der Installation .env-Datei bearbeiten: `nano .env`
 - VPN-Zugangsdaten deines VPN-Anbieters hinterlegen
 - Abschließend Nano Editor mit `STRG + X` und anschließend `Y` + `Enter` beenden.
 - Container mit `docker compose up -d` starten - fertig.
