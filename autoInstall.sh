@@ -41,12 +41,12 @@ echo "Your .env file still needs VPN credentials to function correctly."
 echo
 echo "👉 Please run the following commands manually now:"
 echo
-echo "   sudo nano /opt/homeflix/.env"
+echo "   nano /opt/homeflix/.env"
 echo
 echo "🔐 Edit the VPN_PRIVATE_KEY and other required fields."
 echo "🚀 After editing, start Homeflix with:"
 echo
-echo "   docker compose up -d"
+echo "   sudo docker compose up -d"
 echo
 echo "✅ Setup completed. You're now in the Homeflix directory."
 cd /opt/homeflix
