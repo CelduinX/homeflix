@@ -31,7 +31,7 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 ## ▶️ Option 1: Automatische Installation
 **Führe auf deinen Debian oder Ubuntu Server folgenden Befehl aus:**
 
-    bash <(curl -s https://raw.githubusercontent.com/michaelg/homeflix/main/autoInstall.sh)
+    bash <(curl -s https://github.com/CelduinX/homeflix/raw/refs/heads/main/autoInstall.sh)
 
 **Bitte lesen! - Wichtiger Hinweis:**
 Während der Installation wird der **Nano-Editor** für die Bearbeitung der .env-Datei geöffnet.
