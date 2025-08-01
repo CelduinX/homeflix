@@ -151,6 +151,4 @@ Der vollständige Docker Stack kann mit folgendem Befehl gesichert werden. Vor a
     
 ## 📸 Screenshots
 
-Kommen noch...
-
 (Screenshots folgen demnächst)
