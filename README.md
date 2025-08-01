@@ -1,9 +1,7 @@
 
 # 🎬 Homeflix - Automatisierter Plex Heimserver Stack
 
-**Dieser Docker Compose Stack beinhaltet und installeirt alle notwendigen Docker Container für den automatisierten Plex Media Server Betrieb mit Usenet. Dieses Projekt dient nur der einfachen Installation der dafür benötigten Docker Container.**
-
-Wichtig: Eine ausführliche Anleitung, wie Plex, Overseerr, Radarr, Sonarr und SABnzbd eingerichtet werden müssen, ist nicht enthalten. Entsprechende Anleitungen hierzu sind im Internet zu finden.
+**Dieser Docker Compose Stack beinhaltet und installeirt alle notwendigen Docker Container für den automatisierten Plex Media Server Betrieb mit Usenet. Dieses Projekt dient nur der einfachen Installation der dafür benötigten Docker Container.** Eine ausführliche Anleitung, wie Plex, Overseerr, Radarr, Sonarr und SABnzbd eingerichtet werden müssen, ist nicht enthalten. Entsprechende Anleitungen hierzu sind im Internet zu finden.
 
 ## 📚 Inhaltsverzeichnis
 - [📦 Enthaltene Dienste](#-enthaltene-dienste)
