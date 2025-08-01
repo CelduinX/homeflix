@@ -61,9 +61,8 @@ Anschließend wird die Installation abgeschlossen und die Container fahren hoch.
 Ohne funktionierende WireGuard VPN-Verbindung sind die Container Radarr, Sonarr und SABnzbd nicht erreichbar!
 
 ## 🛠️ Option 2: Manuelle Installation
-#### 1. Debian oder Ubuntu Server installieren
+#### 1. Ubuntu Server installieren
 - Ubuntu Server Download: https://ubuntu.com/download/server
-- Debian Server Download: https://www.debian.org/distrib/
 
 #### 2. Docker installieren
 Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
