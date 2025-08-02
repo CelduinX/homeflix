@@ -12,7 +12,7 @@ Wenn Medien in Plex nicht über "Direct Play" abgespielt werden können, müssen
 Füge mit dem Nano Editor im Abschnitt **`plex`** folgende Zeile hinzu (`nano docker-compose.yml`):
 
     devices:
-     - /dev/dri:/dev/dri
+      - /dev/dri:/dev/dri
 
 Drücke danach `STRG + O` und `Enter` zum speichern, anschließend `STRG + X` zum verlassen des Editors.
 #### 🔄 2. Starte den Docker Compose Stack neu:
