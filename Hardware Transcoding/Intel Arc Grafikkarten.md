@@ -2,11 +2,13 @@
 
 ---
 
-##  Intel Grafikkarten (Arc) Hardware Transcoding aktivieren (Plex Pass)
+##  Intel Arc Hardware Transcoding aktivieren (Plex Pass)
 
-**Hinweis:** Diese Anleitung beschreibt die Aktivierung der Hardware‑Transkodierung für **Intel‑Diskret‑Grafikkarten** wie die **Intel Arc**‑Reihe oder Intel‑Serverkarten. Für integrierte Intel‑Grafikeinheiten (iGPU) gibt es eine separate Anleitung.
+**Hinweis:** Diese Anleitung beschreibt die Aktivierung der Hardware‑Transkodierung für **Intel‑Arc‑Grafikkarten**.
+Für integrierte Intel‑Grafikeinheiten (iGPU) gibt es eine separate Anleitung.
 
-Bei der Wiedergabe von Medien, die nicht per „Direct Play“ kompatibel sind, muss Plex das Video in Echtzeit transkodieren. Durch die Nutzung der **Intel‑Xe‑Medien‑Engine** auf diskreten Karten lassen sich mehrere Streams mit geringerer CPU‑Last realisieren.
+Bei der Wiedergabe von Medien, die nicht per „Direct Play“ kompatibel sind, muss Plex das Video in Echtzeit transkodieren. 
+Durch die Nutzung der **Intel‑Xe‑Medien‑Engine** auf externe (PCIe) Karten lassen sich mehrere Streams mit geringerer Last realisieren.
 
 **✅ Voraussetzungen:**
 - **Plex Pass** (https://www.plex.tv/de/plans/)
