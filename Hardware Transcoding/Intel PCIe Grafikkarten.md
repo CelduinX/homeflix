@@ -22,9 +22,8 @@ devices:
   - /dev/dri:/dev/dri
 ```
 
-Laut der LinuxServer‑Dokumentation ist das Mounten von `/dev/dri` notwendig, um Hardwarebeschleunigung für Intel‑, AMD‑ und ATI‑Grafikkarten zu nutzen【657662267106317†L445-L450】. Der Container sorgt automatisch dafür, dass der interne Benutzer ausreichende Rechte auf das Gerät erhält.
-
-Solltest du mehrere Grafikkarten besitzen, musst du keine weiteren Variablen setzen – `/dev/dri` bindet alle verfügbaren Intel‑Rendergeräte ein. Optional kannst du den Pfad zu einer bestimmten Karte angeben (z. B. `/dev/dri/renderD129:/dev/dri/renderD129`).
+Solltest du mehrere Grafikkarten besitzen, musst du keine weiteren Variablen setzen – `/dev/dri` bindet alle verfügbaren Intel‑Rendergeräte ein.
+Optional kannst du den Pfad zu einer bestimmten Karte angeben (z. B. `/dev/dri/renderD129:/dev/dri/renderD129`).
 
 ###  2. Stack neu starten
 Speichere die Änderungen und starte den Stack neu:
