@@ -15,6 +15,9 @@ Füge mit dem Nano Editor im Abschnitt **`plex`** folgende Zeile hinzu (`nano do
       - /dev/dri:/dev/dri
 
 Drücke danach `STRG + O` und `Enter` zum speichern, anschließend `STRG + X` zum verlassen des Editors.
+
+![docker-compose.yml](Screenshots/01_gpu_nano.png)
+
 #### 🔄 2. Starte den Docker Compose Stack neu:
 
     docker compose down && docker compose up -d
@@ -23,5 +26,7 @@ Drücke danach `STRG + O` und `Enter` zum speichern, anschließend `STRG + X` zu
 - `Hardwarebeschleunigung verwenden, falls verfügbar`: Aktivieren
 - `Hardwarebeschleunigte Video-Encodierung verwenden`: Aktivieren
 - `Gerät für Hardware-Transcodierung`: Erkannte Grafikkarte auswählen
+
+![docker-compose.yml](Screenshots/02_gpu_plex.png)
 
 **Wenn in der Auswahlliste deine Grafikkarte erscheint, hat alles funktioniert und deine Medien werden ab jetzt über die Grafikkarte transkodiert.**
