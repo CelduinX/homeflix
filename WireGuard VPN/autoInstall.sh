@@ -29,8 +29,8 @@ mkdir -p /opt/homeflix/media/{tv,movies,downloads,incomplete} /opt/homeflix/conf
 cd /opt/homeflix
 
 echo "📥 Downloading docker-compose.yml and .env file..."
-curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml -o docker-compose.yml
-curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/.env -o .env
+curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/WireGuard%20VPN/docker-compose.yml -o docker-compose.yml
+curl -sSL https://raw.githubusercontent.com/CelduinX/homeflix/main/WireGuard%20VPN/.env -o .env
 chown -R 1000:1000 /opt/homeflix
 
 echo "📦 Pulling container images..."
