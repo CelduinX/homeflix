@@ -44,9 +44,6 @@ Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
 `VPN_PUBLIC_KEY=""` 
 `VPN_ENDPOINT_IP=""` 
 
-**Wenn kein VPN gewünscht ist verwende die docker-compose.yml und .env Datei aus "withoutVPN"**
-*Die Daten können aus der WireGuard conf-Datei des VPN-Anbieters ausgelesen werden.*
-
 **Optional anpassen:**
 - `PUID` und `PGID` 1000 ist die Standard ID für den ersten angelegten Linux User
 - `TIMEZONE` für Deutschland: `Europe/Berlin` 
