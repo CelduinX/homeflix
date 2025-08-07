@@ -1,22 +1,11 @@
-
 # 🎬 Homeflix - Automatisierter Plex Heimserver Stack
-
 **Dieser Docker Compose Stack beinhaltet und installeirt alle notwendigen Docker Container für den automatisierten Plex Media Server Betrieb mit Usenet. Dieses Projekt dient nur der einfachen Installation der dafür benötigten Docker Container.**
-
 Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Einrichtung ist nicht enthalten. Entsprechende Anleitungen hierzu sind im Internet zu finden.
 
-## 📚 Inhaltsverzeichnis
-- [📦 Enthaltene Dienste](#-enthaltene-dienste)
-- [📝 Voraussetzungen](#-voraussetzungen)
-- [🌐 Port- und WebUI-Übersicht](#-port--und-webui-übersicht)
-- [⚖️ Rechtlicher Hinweis (Disclaimer)](#️-rechtlicher-hinweis-disclaimer)
-- [▶️ Option 1: Automatische Installation](#️-option-1-automatische-installation)
-- [🛠️ Option 2: Manuelle Installation](#️-option-2-manuelle-installation)
-- [🔐 VPN & Datenschutz](#-vpn--datenschutz)
-- [⚠️ Live-Logs und Troubleshooting](#️-live-logs-und-troubleshooting)
-- [🔁 Backup-Hinweis](#-backup-hinweis)
-- [❤️ Danksagung](#️-danksagung)
-- [📸 Screenshots](#-screenshots)
+## Schnellstartanleitung - Wähle deine Variante:
+ - **Docker Stack mit WireGuard VPN:** https://github.com/CelduinX/homeflix/tree/main/WireGuard%20VPN
+ - **Docker Stack mit OpenVPN:** https://github.com/CelduinX/homeflix/tree/main/OpenVPN
+ - **Docker Stack ohne VPN:** https://github.com/CelduinX/homeflix/tree/main/ohne%20VPN
 
 ## 📦 Enthaltene Dienste:
  - **Plex**: Medienserver für Filme, Serien, Musik etc.
@@ -28,7 +17,7 @@ Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Ein
 
 ## 📝 Voraussetzungen
 - Ubuntu Server (LTS Version empfohlen)
-- WireGuard fähiger VPN-Anbieter
+- WireGuard/OpenVPN fähiger VPN-Anbieter wenn mit VPN gewünscht
 
 ## 🌐 Port- und WebUI-Übersicht
 Alle Dienste sind im internen Docker-Netzwerk miteinander verbunden.  
@@ -53,7 +42,3 @@ Das Herunterladen urheberrechtlich geschützter Inhalte ohne entsprechende Lizen
 -   Overseerr (sct/overseerr)
 -   Docker
 -   Allen Entwicklern der Docker-Images – vielen Dank! 🙏
-    
-## 📸 Screenshots
-
-(Screenshots folgen demnächst)
