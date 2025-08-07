@@ -2,10 +2,10 @@
 **Dieser Docker Compose Stack beinhaltet und installeirt alle notwendigen Docker Container für den automatisierten Plex Media Server Betrieb mit Usenet. Dieses Projekt dient nur der einfachen Installation der dafür benötigten Docker Container.**
 Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Einrichtung ist nicht enthalten. Entsprechende Anleitungen hierzu sind im Internet zu finden.
 
-## Schnellstartanleitung - Wähle deine Variante:
- - **Docker Stack mit WireGuard VPN:** https://github.com/CelduinX/homeflix/tree/main/WireGuard%20VPN
- - **Docker Stack mit OpenVPN:** https://github.com/CelduinX/homeflix/tree/main/OpenVPN
- - **Docker Stack ohne VPN:** https://github.com/CelduinX/homeflix/tree/main/ohne%20VPN
+## Installationsanleitung - Wähle deine Variante:
+ - [Docker Stack mit WireGuard VPN](https://github.com/CelduinX/homeflix/tree/main/WireGuard%20VPN)
+ - [Docker Stack mit OpenVPN](https://github.com/CelduinX/homeflix/tree/main/OpenVPN)
+ - [Docker Stack ohne VPN](https://github.com/CelduinX/homeflix/tree/main/ohne%20VPN)
 
 ## 📦 Enthaltene Dienste:
  - **Plex**: Medienserver für Filme, Serien, Musik etc.
@@ -13,7 +13,7 @@ Eine ausführliche Anleitung der Plex, Overseerr, Radarr, Sonarr und SABnzbd Ein
  - **Sonarr**: Automatisierter Serien-Downloader
  - **Overseerr**: Anfrage-Management für Plex-Nutzer
  - **SABnzbd**: Usenet-Downloader
- - **Gluetun**: VPN-Kill-Switch über WireGuard
+ - **Gluetun**: VPN-Kill-Switch
 
 ## 📝 Voraussetzungen
 - Ubuntu Server (LTS Version empfohlen)
