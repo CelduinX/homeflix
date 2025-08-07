@@ -1,7 +1,7 @@
 ## ▶️ Option 1: Automatische Installation
 **1. Script zur automatischen Installation runterladen und ausführen:**
 
-    curl -O https://raw.githubusercontent.com/CelduinX/homeflix/main/autoInstall.sh
+    curl -O https://raw.githubusercontent.com/CelduinX/homeflix/main/WireGuard%20VPN/autoInstall.sh
     chmod +x autoInstall.sh
     sudo ./autoInstall.sh
 
@@ -31,8 +31,8 @@ Folge der offiziellen Anleitung:  https://docs.docker.com/engine/install/
     sudo mkdir -p ./media/{tv,movies,downloads,incomplete} ./config/{plex,overseerr,radarr,sonarr,sabnzbd}  
 
 #### 5. Dateien herunterladen und Berechtigungen anpassen
-    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/docker-compose.yml
-    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/.env
+    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/WireGuard%20VPN/docker-compose.yml
+    wget https://raw.githubusercontent.com/CelduinX/homeflix/main/WireGuard%20VPN/.env
     sudo chown -R 1000:1000 /opt/homeflix
 
 #### 6. `.env` Datei bearbeiten und VPN-Zugangsdaten hinterlegen:
