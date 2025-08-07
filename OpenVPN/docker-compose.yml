@@ -1,0 +1,113 @@
+---
+# ============================================
+# ⚠️ Important Note:
+# This file usually does not need to be edited.
+# All configuration and customization should be done
+# in the .env file (e.g. ports, paths, user IDs).
+# ============================================
+
+services:
+
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+      - VERSION=docker
+      - PLEX_CLAIM=${PLEX_CLAIM}
+    volumes:
+      - ${PLEX_CONFIG}:/config
+      - ${PATH_TV}:/tv
+      - ${PATH_MOVIES}:/movies
+    ports:
+      - "32400:32400"
+    restart: always
+    networks:
+      - net_homeflix
+
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    container_name: overseerr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ${OVERSEERR_CONFIG}:/config
+    ports:
+      - "5055:5055"
+    restart: always
+    networks:
+      - net_homeflix
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ${RADARR_CONFIG}:/config
+      - ${PATH_MOVIES}:/movies
+      - ${PATH_DOWNLOADS}:/downloads
+    restart: always
+    network_mode: service:gluetun
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ${SONARR_CONFIG}:/config
+      - ${PATH_TV}:/tv
+      - ${PATH_DOWNLOADS}:/downloads
+    restart: always
+    network_mode: service:gluetun
+
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ${SABNZBD_CONFIG}:/config
+      - ${PATH_INCOMPLETE}:/incomplete-downloads
+      - ${PATH_DOWNLOADS}:/downloads
+    restart: always
+    network_mode: service:gluetun
+
+  gluetun:
+    image: qmcgaw/gluetun
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - ${VPN_CONFIG}:/gluetun
+    environment:
+      - VPN_SERVICE_PROVIDER=custom
+      - OPENVPN_CUSTOM_CONFIG=/gluetun/custom.conf
+      - OPENVPN_USER=${VPN_USER}
+      - OPENVPN_PASSWORD=${VPN_PASSWORD}
+    ports:
+      - "7878:7878"
+      - "8989:8989"
+      - "8080:8080"
+    restart: always
+    networks:
+      - net_homeflix
+
+# Networks
+networks:
+  net_homeflix:
+    name: net_homeflix
+    driver: bridge
